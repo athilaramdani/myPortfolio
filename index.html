@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loading-container">
+        <div class="loading-spinner">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <h1>Portfolio</h1>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Hello, I'm Athila</h1>
+            <p class="typing-text"></p>
+            <div class="social-links">
+                <a href="https://github.com/athilaramdani" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/athdanz06/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/athilaramdani/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/athdanz06.png" alt="Athila">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 data-aos="fade-down">Tentang Saya</h2>
+        <div class="about-content">
+            <div class="about-img" data-aos="fade-right">
+                <img src="assets/images/profile.jpg" alt="profile">
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <p>
+                    Saya adalah mahasiswa tahun kedua di Telkom University, jurusan Informatika, 
+                    yang memiliki semangat belajar dan berkembang di dunia teknologi. Saya memiliki keahlian dalam 
+                    <strong>leadership, teamwork, problem-solving, communication</strong>, dan <strong>adaptability</strong>. 
+                </p>
+                <h3>Keahlian Saya</h3>
+                <div class="skills">
+                    <div class="skill-item">HTML</div>
+                    <div class="skill-item">CSS</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">Flutter</div>
+                    <div class="skill-item">React JS</div>
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">Database (MySQL, Firebase)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 data-aos="fade-down">Proyek Saya</h2>
+        <div class="project-grid">
+            <div class="project-card" data-aos="zoom-in">
+                <img src="assets/images/math-bullet.png" alt="Math Bullet">
+                <h3>Math Bullet</h3>
+                <p>Game interaktif untuk pendidikan matematika, dirancang dalam kurikulum Merdeka.</p>
+                <a href="#" class="btn">Lihat Detail</a>
+            </div>
+            <div class="project-card" data-aos="zoom-in">
+                <img src="assets/images/sunset-snack.png" alt="SunsetSnack">
+                <h3>SunsetSnack</h3>
+                <p>Website penjualan makanan surplus dengan banyak merchant, menggunakan React JS dan Tailwind CSS.</p>
+                <a href="#" class="btn">Lihat Detail</a>
+            </div>
+            <div class="project-card" data-aos="zoom-in">
+                <img src="assets/images/sound-randomizer.png" alt="Sound Randomizer">
+                <h3>Sound Randomizer</h3>
+                <p>Aplikasi Flutter untuk mengelola dan memutar berbagai suara secara acak.</p>
+                <a href="#" class="btn">Lihat Detail</a>
+            </div>
+            <div class="project-card" data-aos="zoom-in">
+                <img src="assets/images/bird-research.png" alt="Bird Research">
+                <h3>Deep Learning untuk Identifikasi Burung</h3>
+                <p>Riset kolaborasi internasional untuk identifikasi burung menggunakan suara, mendukung konservasi burung di Indonesia dan Malaysia.</p>
+                <a href="#" class="btn">Lihat Detail</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 data-aos="fade-down">Hubungi Saya</h2>
+        <div class="contact-form" data-aos="fade-up">
+            <form>
+                <input type="text" placeholder="Nama" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Pesan" required></textarea>
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Athdanz06. All rights reserved.</p>
+    </footer>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
